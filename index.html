@@ -1,0 +1,466 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Para mi niña hermosa ❤️</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  color: white;
+  text-align: center;
+  background: linear-gradient(135deg, #240046, #7b2cbf, #ff4d8d);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+main {
+  padding: 35px 18px;
+  max-width: 850px;
+  margin: auto;
+  position: relative;
+  z-index: 1;
+}
+
+h1 {
+  font-size: clamp(2.2rem, 7vw, 4rem);
+  text-shadow: 0 0 20px #ffb3d9;
+}
+
+h2 {
+  color: #ffd6e7;
+}
+
+p {
+  line-height: 1.8;
+  font-size: 1.05rem;
+}
+
+.card {
+  background: rgba(255,255,255,0.13);
+  border: 1px solid rgba(255,255,255,0.3);
+  border-radius: 25px;
+  padding: 25px 20px;
+  margin: 25px 0;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 10px 35px #16002c55;
+}
+
+.heart {
+  font-size: 75px;
+  animation: latido 1.2s infinite;
+}
+
+button {
+  background: #ff4d8d;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 15px 24px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 10px 5px;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.06);
+  background: #ff80ab;
+}
+
+.unidades {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 25px 0;
+}
+
+.unidad {
+  background: rgba(255,255,255,0.18);
+  border: 1px solid rgba(255,255,255,0.35);
+  border-radius: 18px;
+  padding: 16px 10px;
+  min-width: 100px;
+  flex: 1;
+  max-width: 150px;
+}
+
+.unidad span {
+  display: block;
+  font-size: clamp(1.6rem, 5vw, 2.5rem);
+  font-weight: bold;
+  color: #ffd6e7;
+  font-variant-numeric: tabular-nums;
+}
+
+.unidad small {
+  display: block;
+  margin-top: 6px;
+}
+
+#sorpresa {
+  display: none;
+  margin-top: 25px;
+  animation: aparecer 1s;
+}
+
+#sorpresa p {
+  font-size: 1.15rem;
+}
+
+.foto {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 20px;
+  border: 3px solid #ffc2dd;
+  margin-top: 15px;
+}
+
+.flotante {
+  position: fixed;
+  bottom: -50px;
+  animation: subir 7s linear forwards;
+  pointer-events: none;
+  z-index: 5;
+}
+
+footer {
+  padding: 30px 10px;
+  color: #ffe1ed;
+}
+
+@keyframes latido {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.18); }
+}
+
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes subir {
+  to {
+    transform: translateY(-115vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<main>
+
+  <div class="heart">❤️</div>
+
+  <h1>Para mi niña hermosa</h1>
+
+  <p>
+    Hice este pequeño lugar en internet solamente
+    para ti, porque eres una persona muy especial
+    para mí y quiero recordarte lo mucho que te quiero.
+  </p>
+
+  <!-- CONTADOR DE NUESTRA RELACIÓN -->
+
+  <div class="card">
+
+    <h2>💕 Nuestro tiempo juntos 💕</h2>
+
+    <p>
+      Desde el 18 de septiembre de 2026,
+      mi vida tiene una razón más para sonreír.
+    </p>
+
+    <div class="unidades" id="unidades">
+
+      <div class="unidad">
+        <span id="dias">0</span>
+        <small>Días</small>
+      </div>
+
+      <div class="unidad">
+        <span id="horas">00</span>
+        <small>Horas</small>
+      </div>
+
+      <div class="unidad">
+        <span id="minutos">00</span>
+        <small>Minutos</small>
+      </div>
+
+      <div class="unidad">
+        <span id="segundos">00</span>
+        <small>Segundos</small>
+      </div>
+
+    </div>
+
+    <p id="mensajeTiempo">
+      Quiero seguir sumando momentos bonitos contigo. ❤️
+    </p>
+
+  </div>
+
+  <!-- CARTA DE AMOR -->
+
+  <div class="card">
+
+    <h2>💌 Una carta para ti</h2>
+
+    <p>
+      Mi amor, tal vez no existan las palabras
+      suficientes para explicarte lo feliz que me haces,
+      pero quiero que sepas algo: desde que llegaste
+      a mi vida, muchas cosas se sienten diferentes.
+    </p>
+
+    <p>
+      Aunque llevemos poco tiempo juntos, cada momento
+      contigo se ha vuelto especial. Me haces sonreír,
+      me haces querer ser mejor y me recuerdas lo bonito
+      que es tener a alguien con quien compartir la vida.
+    </p>
+
+    <p>
+      No prometo ser perfecto, pero sí quiero aprender,
+      mejorar y demostrarte con hechos lo mucho que
+      significas para mí.
+    </p>
+
+    <p>
+      Gracias por existir, por ser tú y por permitirme
+      compartir esta historia contigo.
+    </p>
+
+    <h2>Te quiero muchísimo, mi niña. 💗</h2>
+
+  </div>
+
+  <!-- SORPRESA INTERACTIVA -->
+
+  <div class="card">
+
+    <h2>✨ Tengo algo que decirte ✨</h2>
+
+    <p>
+      Hay algo que quiero recordarte siempre...
+    </p>
+
+    <button onclick="mostrarSorpresa()">
+      Presiona aquí, mi amor 💖
+    </button>
+
+    <div id="sorpresa">
+
+      <div class="heart">🥹❤️</div>
+
+      <p>
+        Si pudiera volver al día en que te conocí,
+        volvería a elegirte.
+        <br><br>
+        Porque no se trata solamente de cuánto tiempo
+        llevamos juntos, sino de lo bonito que es
+        tenerte en mi vida.
+        <br><br>
+        Quiero estar para ti en tus días felices
+        y también en aquellos en los que necesites
+        un abrazo.
+        <br><br>
+        <strong>
+          Mi lugar favorito siempre será donde
+          pueda estar contigo. 💘
+        </strong>
+      </p>
+
+    </div>
+
+  </div>
+
+  <!-- ESPACIO PARA FOTOGRAFÍAS -->
+
+  <div class="card">
+
+    <h2>📸 Nuestro pequeño rincón</h2>
+
+    <p>
+      Aquí podemos guardar uno de nuestros recuerdos
+      favoritos.
+    </p>
+
+    <img
+      src="nosotros.jpg"
+      alt="Un recuerdo de nosotros"
+      class="foto"
+      onerror="this.style.display='none'"
+    >
+
+    <p>
+      Una foto, un recuerdo, una sonrisa
+      y una historia: la nuestra. 💕
+    </p>
+
+  </div>
+
+  <!-- MENSAJE FINAL -->
+
+  <div class="card">
+
+    <h2>🌙 Si algún día lo olvidas...</h2>
+
+    <p>
+      Quiero que recuerdes que eres importante,
+      que tu sonrisa puede mejorar mis días y que
+      me hace muy feliz compartir momentos contigo.
+    </p>
+
+    <p>
+      No sé qué nos depare el futuro, pero quiero
+      disfrutar cada paso de esta historia,
+      aprender contigo y crear recuerdos que
+      algún día podamos mirar con una sonrisa.
+    </p>
+
+    <div class="heart">💗</div>
+
+    <h2>Gracias por ser parte de mi vida.</h2>
+
+    <p>Con muchísimo cariño, para ti. ❤️</p>
+
+  </div>
+
+  <footer>
+    Hecho con amor, solamente para ti 💗
+    <br>
+    <span>18 de septiembre de 2026 ❤️</span>
+  </footer>
+
+</main>
+
+<script>
+
+// FECHA DE INICIO DE LA RELACIÓN
+// Los meses empiezan desde cero:
+// 0 = enero, 8 = septiembre.
+
+const fechaInicio = new Date(2026, 8, 18, 0, 0, 0);
+
+function actualizarContador() {
+
+  const ahora = new Date();
+  const diferencia = ahora.getTime() - fechaInicio.getTime();
+
+  const diasElemento = document.getElementById("dias");
+  const horasElemento = document.getElementById("horas");
+  const minutosElemento = document.getElementById("minutos");
+  const segundosElemento = document.getElementById("segundos");
+  const mensaje = document.getElementById("mensajeTiempo");
+
+  if (diferencia < 0) {
+
+    diasElemento.textContent = "0";
+    horasElemento.textContent = "00";
+    minutosElemento.textContent = "00";
+    segundosElemento.textContent = "00";
+
+    mensaje.textContent =
+      "Nuestra historia está a punto de comenzar. ❤️";
+
+    return;
+  }
+
+  const totalSegundos = Math.floor(diferencia / 1000);
+
+  const dias = Math.floor(totalSegundos / 86400);
+  const horas = Math.floor((totalSegundos % 86400) / 3600);
+  const minutos = Math.floor((totalSegundos % 3600) / 60);
+  const segundos = totalSegundos % 60;
+
+  diasElemento.textContent = dias;
+
+  horasElemento.textContent =
+    String(horas).padStart(2, "0");
+
+  minutosElemento.textContent =
+    String(minutos).padStart(2, "0");
+
+  segundosElemento.textContent =
+    String(segundos).padStart(2, "0");
+
+  mensaje.textContent =
+    "Cada segundo a tu lado es un recuerdo que quiero guardar. ❤️";
+}
+
+// ACTUALIZAR CADA SEGUNDO
+
+actualizarContador();
+setInterval(actualizarContador, 1000);
+
+
+// MOSTRAR LA SORPRESA
+
+function mostrarSorpresa() {
+
+  const sorpresa = document.getElementById("sorpresa");
+
+  sorpresa.style.display = "block";
+
+  lanzarCorazones();
+
+}
+
+
+// ANIMACIÓN DE CORAZONES
+
+function lanzarCorazones() {
+
+  const emojis = ["❤️", "💗", "💖", "💕", "💘", "✨", "🥰"];
+
+  for (let i = 0; i < 35; i++) {
+
+    const corazon = document.createElement("div");
+
+    corazon.className = "flotante";
+
+    corazon.textContent =
+      emojis[Math.floor(Math.random() * emojis.length)];
+
+    corazon.style.left = Math.random() * 100 + "vw";
+
+    corazon.style.fontSize =
+      (Math.random() * 20 + 18) + "px";
+
+    corazon.style.animationDuration =
+      (Math.random() * 3 + 4) + "s";
+
+    document.body.appendChild(corazon);
+
+    setTimeout(function() {
+      corazon.remove();
+    }, 8000);
+
+  }
+
+}
+
+</script>
+
+</body>
+</html>
